@@ -16,7 +16,7 @@ Including another URLconf
 from rest_framework import routers
 from django.conf.urls import url, include
 from django.contrib import admin
-from core import views
+from api import views
 
 router = routers.DefaultRouter()
 router.register(r'feedbacks', views.FeedbackViewSet)

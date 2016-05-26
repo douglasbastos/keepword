@@ -1,8 +1,8 @@
 # coding: utf-8
 
 from rest_framework import viewsets
-from core.serializers import FeedbackSerializer, WordSerializer
 from core.models import Feedback, Word
+from .serializers import FeedbackSerializer, WordSerializer
 
 
 class FeedbackViewSet(viewsets.ModelViewSet):
