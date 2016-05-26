@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block container%}
+  <div class="row">
+    <div class="input-field col s12">
+        <h5 class="center">I am drinking water</h5>
+        <h6 class="center">Section 1</h6>
+        <p class="center">Stuff</p>
+
+        <div class="input-field center col s12">
+            <div class="col s6">
+              <button class="btn waves-effect waves-light">Pular
+                <i class="material-icons right">cached</i>
+              </button>
+            </div>
+            <div class="col s6">
+              <button class="btn waves-effect waves-light" type="submit" name="action">Enviar
+                <i class="material-icons right">send</i>
+              </button>
+            </div>
+        </div>
+      <br><br>
+        <div class="input-field center col s12">
+            <button class="btn waves-effect waves-light">Mudar nível</button>
+      </div>
+    </div>
+  </div>
+{% endblock container%}
