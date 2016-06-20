@@ -5,7 +5,7 @@ from .word import Word
 
 
 class Feedback(models.Model):
-    gostei = models.BooleanField()
+    like = models.BooleanField()
     evaluation = models.IntegerField(null=True)
     frase_id = models.ForeignKey(Word)
 
