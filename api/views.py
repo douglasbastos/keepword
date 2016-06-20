@@ -1,8 +1,24 @@
 # coding: utf-8
-
+import json
 from rest_framework import viewsets
-from core.models import Feedback, Word
+from rest_framework.decorators import api_view
+from rest_framework.response import Response
+from django.core import serializers
+
 from .serializers import FeedbackSerializer, WordSerializer
+from core.models import Feedback, Word
+
+
+@api_view()
+def next_question(request):
+    word = Word.objects.order_by('?').first()
+    serializer = WordSerializer([word])
+    return Response(serializer.data)
+
+
+@api_view()
+def result_question(request):
+    return Response({"message": "Hello, world!"})
 
 
 class FeedbackViewSet(viewsets.ModelViewSet):
