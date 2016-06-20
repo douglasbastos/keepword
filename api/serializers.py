@@ -1,5 +1,5 @@
 # coding: utf-8
-from core.models import Feedback, Word
+from .models import Feedback, Word
 from rest_framework import serializers
 
 

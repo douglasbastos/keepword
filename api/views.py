@@ -6,7 +6,7 @@ from rest_framework.response import Response
 from django.core import serializers
 
 from .serializers import FeedbackSerializer, WordSerializer
-from core.models import Feedback, Word
+from .models import Feedback, Word
 
 
 @api_view()
