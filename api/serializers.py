@@ -12,4 +12,4 @@ class WordSerializer(serializers.HyperlinkedModelSerializer):
 class FeedbackSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Feedback
-        fields = ('gostei', 'evaluation', 'frase_id')
+        fields = ('like', 'evaluation', 'frase_id')
